@@ -1,0 +1,18 @@
+<div id="<%= dom_id user %>" class="flex gap-[20px]">
+  <p >
+    <strong>Email:</strong>
+    <%= user.email %>
+  </p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= user.name %>
+  </p>
+<% user.skills.each do |skill| %>
+  <p>
+    <%= skill.name %>
+    <%= skill.type %>
+  </p>
+<% end %>
+
+</div>
